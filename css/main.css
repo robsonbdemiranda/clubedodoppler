@@ -1,0 +1,411 @@
+/* Header */
+.header {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+
+    width: 100%;
+}
+
+.header .container {
+    max-width: none;
+
+    padding: 2rem 0;
+}
+
+.header .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .nav .logo img {
+    width: 150px;
+}
+
+.header .nav-bar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .nav-bar {
+    margin-left: 4rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .nav-bar ul li {
+    margin: 0 0.5rem;
+}
+
+.header .nav-bar ul li .nav-link {
+    display: block;
+    width: fit-content;
+    color: var(--white-color);
+    padding: 0.4rem 1rem;
+
+    font-weight: 500;
+
+    position: relative;
+}
+
+.header .nav-bar ul li .destaque-login {
+    padding: 1rem 6rem;
+}
+.header .nav-bar ul li .destaque-criar {
+    padding: 1rem 3rem;
+    color: var(--white-color);
+}
+
+.header .nav-bar ul li .nav-link:hover {
+    color: var(--secondary-color);
+}
+
+.header .nav-bar ul li .nav-link::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 3px;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    left: 0;
+    bottom: 0;
+
+    transition: all 0.4s ease-in-out;
+}
+
+.header .nav-bar ul li .nav-link:hover::before {
+    width: 100%;
+}
+
+.header .logo img {
+    width: 250px;
+}
+
+.header .header-stick {
+    top: -25%;
+    transition: all 1s ease-in-out;
+}
+
+.header .header-stick.active {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+    background-color: #021d30;
+}
+.header .header-stick.active .nav-link::before {
+    background-color: var(--white-color);
+}
+
+/* Banner */
+
+.banner {
+    background-color: var(--main-color);
+}
+
+.banner .container {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.banner .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner .text {
+    width: 50%;
+}
+
+.banner .text h5 {
+    font-size: 1.6rem;
+    color: var(--secondary-color);
+}
+
+.banner .text h1 {
+    font-size: 6.2rem;
+    color: var(--white-color);
+}
+
+.banner .text p {
+    padding: 3rem 0;
+}
+
+/* Vantagens */
+
+.vantagens {
+    width: 100%;
+    background-color: var(--main-color);
+    padding-top: 5rem;
+}
+
+.vantagens .title {
+    text-align: center;
+}
+
+.vantagens .title h2 {
+    color: var(--white-color);
+    font-size: 3.8rem;
+}
+
+.vantagens .vantagens-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    flex-wrap: wrap;
+
+    margin-top: 8rem;
+}
+
+.vantagens-list .vantagens-box {
+    flex: 0 0 30%;
+    margin-bottom: 8rem;
+    align-self: stretch;
+}
+
+.vantagens .vantagens-box .icon i {
+    font-size: 5rem;
+    color: var(--secondary-color);
+}
+
+.vantagens .vantagens-box .text h3 {
+    font-size: 2.2rem;
+    color: var(--white-color);
+    padding: 2rem 0 1rem 0;
+}
+
+
+
+/* Como Funciona */
+
+.como-funciona {
+    width: 100%;
+    padding: 5rem 0;
+}
+
+.como-funciona .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.como-funciona .row:nth-child(2) {
+    margin-top: 8rem;
+}
+
+.como-funciona .text {
+    width: 50%;
+}
+
+.como-funciona .image {
+    width: 40%;
+}
+
+.como-funciona .text h2 {
+    color: var(--main-color);
+}
+.como-funciona .text p {
+    padding: 2rem 0;
+}
+
+.como-funciona .text ul {
+    margin-left: 40px;
+}
+
+.como-funciona .text ul li {
+    padding: 0.5rem 0;
+    position: relative;
+}
+
+.como-funciona .text ul li::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: -20px;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: var(--main-color);
+}
+
+.como-funciona .text .buttons {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    margin-top: 2rem;
+}
+
+.como-funciona .text .buttons p {
+    padding: 0 1rem;
+    font-size: 1.8rem;
+}
+
+/* Faq */
+
+.faq {
+    width: 100%;
+    position: relative;
+    background-color: var(--main-color);
+    padding-top: 8rem;
+}
+
+.faq::before {
+    position: absolute;
+    top: 0;
+    content: "";
+    border-top: 8rem solid #FFFFFF;
+    border-left: 100vw solid transparent;
+    left: 0px;
+    z-index: 1;
+    right: 0;
+}
+
+.faq .title {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+
+.faq .title h2 {
+    color: var(--white-color);
+}
+
+.faq-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.faq-box {
+    align-self: stretch;
+    flex: 0 0 47%;
+
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-bottom: 5rem;
+}
+
+.faq-box .question-icon {
+    color: var(--white-color);
+    font-size: 3rem;
+    padding-right: 1rem;
+}
+
+.faq-box .text h3 {
+    font-size: 2.2rem;
+    color: var(--white-color);
+    padding-bottom: 1rem;
+}
+
+
+
+/* Footer */
+
+.footer {
+    background-color: #021d30;
+}
+
+.footer a {
+    transition: all 0.3s ease-in-out;
+}
+
+.footer a:hover {
+    color: var(--secondary-color);
+}
+
+.footer .container {
+    padding: 5rem 0;
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+
+.footer__about{
+    text-align: center;
+}
+
+.footer__about p {
+    font-size: 1.6rem;
+    color: var(--white-color);
+}
+
+.footer__about img {
+    width: 200px;
+}
+
+.footer__about__social {
+    margin-top: 2rem;
+}
+
+.footer__about__social ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__about__social ul li a {
+    font-size: 1.6rem;
+    color: var(--white-color);
+    padding: 1rem;
+}
+
+.footer__links{
+    margin-left: 10rem;
+}
+
+.footer__links h4 {
+    font-size: 2rem;
+    padding-bottom: 4rem;
+    color: var(--white-color);
+}
+
+.footer__links ul li a {
+    color: var(--white-color);
+}
+
+.footer__contato h4 {
+    font-size: 2rem;
+    padding-bottom: 4rem;
+    color: var(--white-color);
+}
+
+.footer__contato p {
+    color: var(--white-color);
+    padding-bottom: 1rem;
+}
+
+.footer__contato p a {
+    color: var(--white-color);
+}
+
+.footer .made-by {
+    text-align: center;
+    color: var(--white-color);
+    padding: 1rem 0;
+}
+
+.footer .made-by a {
+    color: var(--white-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.footer .made-by a:hover {
+    color: var(--secondary-color);
+}

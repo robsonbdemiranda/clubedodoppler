@@ -1,0 +1,76 @@
+@media screen and (max-width: 1000px) {
+
+    .header{
+        position: sticky;
+        background-color: var(--main-color);
+    }
+
+    .banner .container{
+        height: auto;
+    }
+
+    .banner .row{
+        flex-direction: column;
+    }
+
+    .banner .text{
+        width: 100%;
+    }
+
+    .vantagens-list .vantagens-box{
+        flex: 0 0 100%;
+    }
+
+    .como-funciona .row{
+        flex-direction: column;
+        
+    }
+
+    .como-funciona .image{
+        width: 100%;
+        text-align: center;
+    }
+
+    .como-funciona .text{
+        width: 100%;
+    }
+
+    .como-funciona .row:nth-child(2){
+        flex-direction: column-reverse;
+    }
+
+    .faq-box{
+        flex: 0 0 100%;
+    }
+}
+
+@media screen and (max-width: 630px){
+    .header .nav{
+        flex-direction: column;
+    }
+    .header .nav-bar{
+        margin: 0;
+    }
+
+    .banner .text h1{
+        font-size: 4rem;
+    }
+
+    .footer .container{
+        flex-direction: column;
+    }
+
+    .como-funciona .text .buttons{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .header .nav-bar ul{
+        flex-direction: column;
+    }
+
+    .header .nav-bar ul li{
+        margin-bottom: 0.5rem;
+    }
+}

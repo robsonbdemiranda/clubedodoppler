@@ -1,0 +1,41 @@
+.header-interno{
+    background-color: var(--main-color);
+}
+.politica-privacidade {
+    margin-top: 15rem;
+}
+
+.politica-privacidade .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.politica-privacidade .container .texto h1 {
+    color: #032842;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.politica-privacidade .container .texto h2 {
+    color: #032842;
+    padding: 10px 0;
+}
+
+.politica-privacidade .container .texto p {
+    padding: 12px 0;
+}
+
+.politica-privacidade .container .texto ul {
+    margin-left: 25px;
+}
+
+.politica-privacidade .container .texto ul li {
+    padding: 8px 0;
+    color: #9E9FA2;
+    list-style: initial;
+}
+
+
+.politica-privacidade .container .texto a {
+    color: #032842;
+}
